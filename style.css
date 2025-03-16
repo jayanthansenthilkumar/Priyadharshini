@@ -2091,6 +2091,104 @@ html {
     transform: scale(1.1);
 }
 
+/* AI Assistant Responsive Fixes */
+@media (max-width: 576px) {
+    .ai-assistant {
+        position: fixed;
+        bottom: 70px; /* Adjusted to be above navbar on mobile */
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .ai-button {
+        width: 50px; /* Slightly smaller button on mobile */
+        height: 50px;
+        box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);
+    }
+
+    .ai-button i {
+        font-size: 20px;
+    }
+
+    .ai-chat-container {
+        position: fixed; /* Changed to fixed */
+        bottom: 0;
+        right: 0;
+        left: 0; /* Added left: 0 for full width */
+        width: 100%;
+        height: calc(100vh - 70px); /* Full height minus navbar */
+        border-radius: 15px 15px 0 0; /* Rounded corners only on top */
+        margin: 0;
+    }
+
+    .ai-chat-header {
+        padding: 12px 15px;
+    }
+
+    .ai-avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .ai-details h3 {
+        font-size: 1em;
+    }
+
+    .ai-chat-messages {
+        padding: 15px;
+        height: calc(100% - 120px); /* Adjust for header and input */
+    }
+
+    .ai-message p {
+        max-width: 85%;
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .ai-chat-input {
+        position: relative;
+        bottom: 0;
+        padding: 10px;
+        background: var(--card-bg);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .ai-chat-input input {
+        height: 40px;
+        font-size: 0.9em;
+    }
+
+    .ai-chat-input button {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Additional fixes for landscape mode */
+@media (max-height: 500px) and (orientation: landscape) {
+    .ai-chat-container {
+        height: 100vh;
+        top: 0;
+    }
+
+    .ai-chat-messages {
+        height: calc(100% - 110px);
+    }
+}
+
+/* Fix for devices with notches/safe areas */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    @media (max-width: 576px) {
+        .ai-chat-container {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        
+        .ai-chat-input {
+            padding-bottom: calc(10px + env(safe-area-inset-bottom));
+        }
+    }
+}
+
 /* Responsive Styles */
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) {
