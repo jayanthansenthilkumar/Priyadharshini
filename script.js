@@ -143,67 +143,126 @@ document.addEventListener("DOMContentLoaded", () => {
         greetings: {
             keywords: ['hi', 'hello', 'hey', 'morning', 'afternoon', 'evening'],
             responses: [
-                'Hello! How can I help you learn more about Priya?',
-                'Hi there! What would you like to know about Priya?',
-                'Welcome! I\'m here to help you learn about Priya\'s work and experience.'
+                'Hi! I\'m Priya. How can I help you?',
+                'Hello! Nice to meet you. What would you like to know about me?',
+                'Hey there! I\'m happy to chat with you about my work and experience.'
             ]
         },
         introduction: {
             keywords: ['who', 'what', 'name', 'about', 'tell'],
             responses: [
-                "I'm Priya's AI assistant, designed to help you learn about her work and experience!",
-                "I'm here to tell you all about Priyadharshini Balakrishnan, a talented Full Stack Developer.",
-                "Let me introduce you to Priya - she's a passionate developer specializing in web applications."
+                "I'm Priyadharshini Balakrishnan, a passionate Full Stack Developer who loves creating web applications!",
+                "I'm a developer specializing in full-stack web development with a focus on creating impactful solutions.",
+                "Let me introduce myself - I'm Priya, and I love turning ideas into reality through code!"
             ]
         },
         projects: {
             keywords: ['project', 'sowberry', 'snapcert', 'portfolio', 'build'],
             details: {
-                'sowberry': "The Sowberry Platform is an interactive e-learning platform featuring course management, live sessions, and progress tracking. It uses Laravel and React.",
-                'snapcert': "Snapcert is a secure certificate management system with digital verification and automated generation features.",
-                'general': "Priya has worked on several impressive projects. The main ones are Sowberry Platform and Snapcert. Which one would you like to know more about?"
+                'sowberry': "I developed the Sowberry Platform, an interactive e-learning system where I implemented course management, live sessions, and progress tracking using Laravel and React.",
+                'snapcert': "I created Snapcert, a secure certificate management system where I built digital verification and automated generation features.",
+                'general': "I've worked on several exciting projects! My main ones are the Sowberry Platform and Snapcert. Which one would you like to hear about?"
             }
         },
         skills: {
             keywords: ['skill', 'tech', 'code', 'language', 'framework', 'develop'],
             details: {
-                'frontend': "In frontend development, Priya is proficient in HTML/CSS (90%), JavaScript (85%), and React (80%).",
-                'backend': "For backend, Priya works with PHP (85%), Laravel (80%), and MySQL (75%).",
-                'tools': "Priya is experienced with Git, VS Code, and various development tools.",
-                'general': "Priya is a full-stack developer with expertise in both frontend and backend technologies. Would you like to know about specific skills?"
+                'frontend': "In frontend development, I'm proficient in HTML/CSS (90%), JavaScript (85%), and React (80%).",
+                'backend': "For backend, I work with PHP (85%), Laravel (80%), and MySQL (75%).",
+                'tools': "I'm experienced with Git, VS Code, and various development tools.",
+                'general': "I'm a full-stack developer with expertise in both frontend and backend technologies. Would you like to know about specific skills?"
             }
         },
         experience: {
             keywords: ['work', 'job', 'company', 'role', 'prisoltech'],
             responses: [
-                "Priya is currently working as a Full Stack Developer at PrisolTech, where she develops responsive web applications and implements secure authentication systems.",
-                "At PrisolTech, Priya has gained valuable experience in full-stack development, particularly with Laravel and React.",
-                "Her professional experience includes creating RESTful APIs, database architectures, and modern web applications."
+                "I'm currently working as a Full Stack Developer at PrisolTech, where I develop responsive web applications and implement secure authentication systems.",
+                "At PrisolTech, I've gained valuable experience in full-stack development, particularly with Laravel and React.",
+                "My professional experience includes creating RESTful APIs, database architectures, and modern web applications."
             ]
         },
         education: {
             keywords: ['study', 'college', 'school', 'degree', 'grade'],
             details: {
-                'college': "Currently pursuing Computer Science & Business System at Panimalar Engineering College (2023-2027) with a CGPA of 8.819",
-                'school': "Completed schooling at Everwin Matriculation Higher Secondary School with 82% in Secondary School",
-                'general': "Would you like to know about Priya's college education or school background?"
+                'college': "I'm currently pursuing Computer Science & Business System at Panimalar Engineering College (2023-2027) with a CGPA of 8.819",
+                'school': "I completed my schooling at Everwin Matriculation Higher Secondary School with 82% in Secondary School",
+                'general': "Would you like to know about my college education or school background?"
             }
         },
         contact: {
             keywords: ['contact', 'mail', 'phone', 'reach', 'connect'],
             responses: [
-                "You can reach Priya through:\nEmail: priyadharshini26806@gmail.com\nPhone: +91 9043400716",
-                "The best way to contact Priya is via email at priyadharshini26806@gmail.com",
-                "Feel free to connect with Priya on LinkedIn or GitHub - links are available on the website!"
+                "You can reach me through:\nEmail: priyadharshini26806@gmail.com\nPhone: +91 9043400716",
+                "The best way to contact me is via email at priyadharshini26806@gmail.com",
+                "Feel free to connect with me on LinkedIn or GitHub - links are available on the website!"
             ]
         },
         certificates: {
             keywords: ['cert', 'course', 'training', 'learn', 'udemy'],
             responses: [
-                "Priya has completed certifications in Full Stack Development (Udemy) and React Development (Coursera).",
-                "Her recent certifications include comprehensive courses in web development and modern frameworks.",
+                "I've completed certifications in Full Stack Development (Udemy) and React Development (Coursera).",
+                "My recent certifications include comprehensive courses in web development and modern frameworks.",
                 "Would you like to know more about specific certifications?"
             ]
+        },
+        achievements: {
+            keywords: ['achieve', 'award', 'recognition', 'won', 'accomplishment', 'contest'],
+            details: {
+                'industrial': "I completed comprehensive training in Industrial Automation Using PLC's at NSIC, Chennai in 2024, gaining hands-on experience with modern manufacturing technologies.",
+                'contest': "I secured first place in the Technical Symposium project contest at Panimalar Engineering College in 2024.",
+                'general': "I have notable achievements in both academic and technical fields. Would you like to know about my industrial training or project contests?"
+            }
+        },
+        personality: {
+            keywords: ['person', 'interest', 'hobby', 'like', 'passion', 'characteristic'],
+            responses: [
+                "I'm a passionate developer who loves creating innovative solutions. I'm detail-oriented and always eager to learn new technologies.",
+                "Beyond coding, I'm enthusiastic about problem-solving and creating user-friendly applications.",
+                "I'm known for my dedication to clean code and ability to work well in team environments."
+            ]
+        },
+        location: {
+            keywords: ['where', 'location', 'city', 'country', 'based', 'live'],
+            responses: [
+                "I'm based in Chennai, India.",
+                "I'm currently working and residing in Chennai, one of India's major tech hubs.",
+                "Located in Chennai, India, I'm actively involved in the local tech community."
+            ]
+        },
+        availability: {
+            keywords: ['available', 'hire', 'freelance', 'opportunity', 'job', 'position'],
+            responses: [
+                "I'm always open to exciting opportunities in web development and full-stack projects!",
+                "Feel free to reach out to me via email or LinkedIn to discuss potential collaborations.",
+                "While I'm focused on my current work, I'm always interested in hearing about challenging new projects."
+            ]
+        },
+        technical: {
+            keywords: ['api', 'database', 'system', 'architecture', 'design', 'stack'],
+            details: {
+                'frontend': "I specialize in creating responsive, user-friendly interfaces using React and modern CSS frameworks.",
+                'backend': "My backend expertise includes RESTful API design, database optimization, and secure authentication systems.",
+                'database': "I work with both SQL (MySQL) and NoSQL databases, focusing on efficient data structuring.",
+                'architecture': "I implement scalable architectures following clean code principles and modern design patterns.",
+                'general': "I have extensive full-stack experience. Which aspect would you like to know more about?"
+            }
+        },
+        learning: {
+            keywords: ['learn', 'studying', 'focus', 'growth', 'improve', 'future'],
+            responses: [
+                "I'm currently focusing on advanced React patterns and cloud technologies.",
+                "I'm actively learning about AI integration in web applications and microservices architecture.",
+                "My learning roadmap includes cloud deployment, DevOps practices, and advanced system design."
+            ]
+        },
+        workflow: {
+            keywords: ['process', 'methodology', 'approach', 'work', 'practice', 'git'],
+            details: {
+                'development': "I follow agile methodologies with emphasis on clean code and thorough testing.",
+                'tools': "I use Git for version control, Jira for project management, and modern IDE tools.",
+                'practices': "I implement CI/CD pipelines and follow test-driven development principles.",
+                'general': "Would you like to know about my development process, tools, or best practices?"
+            }
         }
     };
 
@@ -250,6 +309,11 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             // For categories with direct responses
             response = bestMatch.data.responses[Math.floor(Math.random() * bestMatch.data.responses.length)];
+        }
+
+        // Add context awareness
+        if (bestMatch.category === 'technical' && lowercaseMsg.includes('example')) {
+            bestMatch.data.details.example = "Here's a real example from Priya's work: The Sowberry Platform uses React for the frontend and Laravel for the backend, implementing JWT authentication and real-time features.";
         }
 
         return {
